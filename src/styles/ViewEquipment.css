@@ -1,0 +1,123 @@
+/* ViewEquipment.css */
+
+.equipment-list {
+    padding-top: 100px;
+}
+
+.equipment-list h1 {
+    font-size: 3em;
+    color: green; /* Black color for the heading */
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%; /* Ensures heading takes full width */
+    font-weight: bold;
+}
+
+.equipment-list-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    padding: 40px;
+    text-align: center;
+}
+
+.equipment-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #f9f9f9;
+    transition: transform 0.2s;
+}
+
+.equipment-card:hover {
+    transform: scale(1.05);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.equipment-card h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 10px 0;
+}
+
+.equipment-card p {
+    font-size: 0.9em;
+    margin: 5px 0;
+    color: #555;
+}
+
+.equipment-card button {
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.equipment-card button:hover {
+    background-color: #0056b3;
+}
+
+.equipment-card button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+.offer-form {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.offer-form h3 {
+    font-size: 1.3em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.offer-form input,
+.offer-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.offer-form button {
+    background-color: #28a745;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: background-color 0.3s;
+}
+
+.offer-form button[type="button"] {
+    background-color: #dc3545; /* Red for cancel button */
+}
+
+.offer-form button:hover {
+    background-color: #218838;
+}
+
+.offer-form button[type="button"]:hover {
+    background-color: #c82333;
+}

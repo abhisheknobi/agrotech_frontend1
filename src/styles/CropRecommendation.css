@@ -1,0 +1,99 @@
+/* Container styling */
+.crop-rec-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 130px;
+}
+.crop-recom-container {
+  background: #f0fdf4; /* Light green background */
+  border-radius: 15px;
+  padding: 30px;
+  padding-top: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+
+  
+  /* Change from absolute to flex-based centering */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading */
+.crop-recom-container h2 {
+  color: #256029;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Form styling */
+.crop-recom-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.crop-recom-container input {
+  padding: 12px;
+  border: 2px solid #c7e3c9;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.crop-recom-container input:focus {
+  border-color: #256029;
+  box-shadow: 0 0 8px rgba(37, 96, 41, 0.2);
+}
+
+/* Button styling */
+.crop-recom-container button {
+  background: #256029;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: 15px;
+}
+
+.crop-recom-container button:hover {
+  background: #1b4a1e;
+  transform: scale(1.05);
+}
+
+/* Result container */
+.result-container {
+  margin-top: 25px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+/* Recommended crop heading */
+.result-container h3 {
+  color: #256029;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+/* Tips list */
+.suggestions-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #2c3e50;
+}
+
+.suggestions-list li {
+  margin-bottom: 6px;
+  font-size: 16px;
+}

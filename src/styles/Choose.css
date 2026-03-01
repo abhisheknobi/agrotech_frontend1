@@ -1,0 +1,95 @@
+/* src/component/Choose.css */
+
+.container {
+    display: flex;
+    flex-direction: column; /* Stack title and boxes vertically */
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px; /* Adjust this value if needed */
+    height: 50vh;
+  }
+  
+  .title {
+    font-family: Georgia, serif;
+    text-align: center; /* Center the title */
+    font-size: 24px; /* Adjust the font size */
+    font-weight: bold; /* Make it bold */
+    margin-bottom: 90px; /* Space below the title */
+    color: #333; /* Change color if desired */
+  }
+  
+  .box-container {
+    display: flex; /* Flex container for boxes */
+    justify-content: space-around; /* Space out boxes evenly */
+    width: 100%; /* Full width of the container */
+  }
+  
+  .box-wrapper {
+    display: flex;
+    flex-direction: column; /* Stack label above the box */
+    align-items: center; /* Center the items */
+  }
+  
+  .box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s, border 0.3s; /* Add border transition */
+  }
+  
+  /* Hover effect */
+  .box:hover {
+    border: 2px solid blue; /* Blue border on hover */
+  }
+  
+  
+  
+  /* Selected box hover effect */
+  .box.selected:hover {
+    border: 4px solid blue; /* Maintain blue border when selected and hovered */
+  }
+  
+  .label {
+    
+    margin-bottom: 10px; /* Space between label and box */
+    font-family: Georgia, serif;
+   
+    font-weight: bold; /* Make text bold */
+    font-size: 18px; /* Font size */
+    color: #333; /* Text color */
+  }
+  
+  .select-button {
+    position: absolute;
+    bottom: 20px; /* Adjust position */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px; /* Width of the button (make it smaller) */
+    height: 20px; /* Height of the button (make it smaller) */
+    border-radius: 50%; /* Make it round */
+    background-color: transparent; /* Default background */
+    border: 3px solid blue; /* Default border color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border-color 0.3s; /* Smooth transition */
+  }
+  
+  .inner-circle {
+    width: 10px; /* Width of the inner circle (make it smaller) */
+    height: 10px; /* Height of the inner circle (make it smaller) */
+    border-radius: 50%; /* Make it round */
+    background-color: blue; /* Color of the inner circle */
+  }
+  .box-image {
+    width: 70%; /* Make the image full width of the box */
+    height: 60%; /* Maintain aspect ratio */
+    border-radius: 10px 10px 0 0; /* Round top corners of the image */
+    margin-left: 40px;
+    margin-top: 50px;
+  }
+  

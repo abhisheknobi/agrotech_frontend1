@@ -1,0 +1,124 @@
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    padding: 50px;
+    padding-top: 130px;
+}
+
+.centered-image {
+    width: 100%;
+    max-width: 1490px;
+    height: auto;
+    position: relative;
+    top: -190px;
+}
+
+.small-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    margin-top: -290px;
+    margin-bottom: 50px;
+}
+
+.small-box {
+    width: 250px;
+    height: 200px;
+    background-color: lightgrey;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    transition: box-shadow 0.3s ease;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.box-1 { background-image: url('../components/images/cast.png'); }
+.box-2 { background-image: url('../components/images/news.png'); }
+.box-3 { background-image: url('../components/images/expense.jpeg'); }
+.box-4 { background-image: url('../components/images/shop.png'); }
+.box-5 { background-image: url('../components/images/crop_recommendation.png'); }
+.box-6 { background-image: url('../components/images/fertilizer_recommendation.png'); }
+.box-7 { background-image: url('../components/images/crop_disease_ai.png'); }
+.box-8 { background-image: url('../components/images/expert_consult.png'); }
+.box-9 { background-image: url('../components/images/job_portal.jpg'); }
+.box-10 { background-image: url('../components/images/ai_chatbot.png'); }
+
+.small-box-text {
+    text-align: center;
+    font-size: 16px;
+    color: #1b3f23;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+@media (max-width: 1024px) {
+    .small-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .small-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.content-section {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.content-section:hover {
+    background-color: #1b3f23;
+    color: #ffffff;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.footer-section {
+    width: 23%;
+    color: #000000;
+    transition: color 0.3s ease;
+}
+
+.footer-section h3,
+.footer-section p,
+.footer-section ul li {
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

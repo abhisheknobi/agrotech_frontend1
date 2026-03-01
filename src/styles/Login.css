@@ -1,0 +1,119 @@
+/* Login.css */
+
+.login-container {
+  display: flex;                                 /* Use flexbox for layout */
+  justify-content: center;                       /* Center the container horizontally */
+  align-items: center;                           /* Center the container vertically */
+  padding: 20px;                                 /* Add padding around the container */
+  height: 100vh;                                 /* Full height of the viewport */
+  position: relative;                            /* Position relative for overlay */
+  overflow: hidden;                              /* Ensure no overflow from children */
+}
+
+.login-container::before {
+  content: "";                                   /* Create a pseudo-element */
+  position: absolute;
+  top: 0;                                        /* Stretch from the top */
+  left: 0;                                       /* Stretch from the left */
+  right: 0;                                      /* Stretch to the right */
+  bottom: 0;                                     /* Stretch to the bottom */
+  background-image: url(../components/images/back.jpg); /* Background image */
+  background-size: cover;                        /* Cover the entire container */
+  background-position: center;                   /* Center the image */
+  filter: blur(5px);                             /* Apply blur effect */
+
+}
+
+.login-form {
+  flex: 0 0 400px;                              /* Set the form to a fixed width */
+  margin: 0;                                    /* Remove margin for centering */
+  background: white;                            /* White background for the form */
+  border-radius: 8px;                           /* Rounded corners for the form */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);   /* Subtle shadow for depth */
+  padding: 20px;                                /* Padding inside the form */
+  position: relative;                           /* Ensure form is above the overlay */
+  z-index: 2;                                   /* Ensure form is above the overlay */
+}
+
+.login-form h2 {
+  margin-bottom: 20px;                          /* Space below the heading */
+  font-size: 24px;                              /* Font size for the heading */
+  color: #333;                                  /* Dark text color for the heading */
+}
+
+/* Other styles remain unchanged */
+
+
+.login-form {
+  max-width: 400px;                       /* Set a maximum width for the form */
+  width: 100%;                            /* Full width for responsiveness */
+  background: white;                      /* White background for the form */
+  border-radius: 12px;                    /* Rounded corners for the form */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+  padding: 30px;                          /* Padding inside the form */
+  transition: transform 0.3s;             /* Smooth transition for hover effect */
+}
+
+.login-form:hover {
+  transform: translateY(-5px);           /* Slight lift effect on hover */
+}
+
+.login-form h2 {
+  margin-bottom: 20px;                    /* Space below the heading */
+  font-size: 28px;                        /* Larger font size for the heading */
+  color: #333;                            /* Dark text color for the heading */
+  text-align: center;                     /* Centered heading */
+}
+
+.login-form div {
+  margin-bottom: 20px;                    /* Space between input fields */
+}
+
+.login-form label {
+  display: block;                         /* Block display for labels */
+  margin-bottom: 5px;                    /* Space below labels */
+  font-weight: bold;                      /* Bold font for labels */
+  font-size: 14px;                        /* Font size for labels */
+  color: #555;                            /* Darker color for labels */
+}
+
+.login-form input {
+  width: 100%;                           /* Full width for inputs */
+  padding: 12px;                         /* Increased padding for inputs */
+  border: 1px solid #ccc;               /* Light gray border */
+  border-radius: 8px;                   /* More pronounced rounded corners */
+  box-sizing: border-box;                /* Include padding and border in width */
+  font-size: 16px;                       /* Font size for input text */
+  transition: border-color 0.3s;        /* Smooth transition for border color */
+}
+
+.login-form input:focus {
+  border-color: hsl(122, 54%, 14%);                 /* Green border on focus */
+  outline: none;                         /* Remove default outline */
+}
+
+.login-form button {
+  width: 100%;                           /* Full width for the button */
+  padding: 12px;                         /* Increased padding for the button */
+  background-color: #174519;            /* Green background for the button */
+  color: white;                          /* White text color for button */
+  border: none;                          /* No border */
+  border-radius: 8px;                   /* Rounded corners for button */
+  font-size: 16px;                       /* Font size for button text */
+  cursor: pointer;                       /* Pointer cursor on hover */
+  transition: background-color 0.3s;    /* Smooth transition for background color */
+}
+
+.login-form button:hover {
+  background-color: #45a049;             /* Darker green on hover */
+}
+
+.popup-message {
+  margin-top: 15px;                      /* Space above the popup message */
+  padding: 10px;                         /* Padding inside message box */
+  background-color: #e2e3e5;              /* Light gray background for message */
+  border: 1px solid #b1b3b5;             /* Border for message box */
+  color: #721c24;                        /* Dark red color for error messages */
+  border-radius: 4px;                    /* Rounded corners for message box */
+  text-align: center;                    /* Center the text in the message box */
+}

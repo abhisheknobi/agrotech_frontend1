@@ -1,0 +1,123 @@
+/* Main container styling */
+.notifications-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.notifications-wrapper {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    height: 500px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Section headers */
+.notifications-container h4 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 5px;
+}
+
+/* No notifications message */
+.notifications-container p {
+    color: #666;
+    text-align: center;
+}
+
+/* Notification item styling */
+.notification-item {
+    list-style-type: none;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.notification-item p {
+    margin: 8px 0;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+/* Strong text styling for important fields */
+.notification-item strong {
+    color: #555;
+}
+
+/* Button styling */
+.notification-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.notification-buttons button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.notification-buttons button:hover {
+    opacity: 0.9;
+}
+
+/* Accept button styling */
+.notification-buttons .accept-button {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.notification-buttons .accept-button:hover {
+    background: linear-gradient(135deg, #fefefe, #0b500e);
+}
+
+/* Reject button styling */
+.notification-buttons .reject-button {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.notification-buttons .reject-button:hover {
+    background-color: #e53935;
+}
+
+/* Loading and empty sections */
+.loading, .empty-section {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #777;
+    margin: 20px 0;
+}
+
+/* Custom styling for section dividers */
+.section-divider {
+    margin: 30px 0;
+    border-top: 2px solid #ddd;
+    text-align: center;
+}
+
+.section-divider::after {
+    content: '•';
+    font-size: 1.2rem;
+    color: #bbb;
+    position: relative;
+    top: -12px;
+    padding: 0 10px;
+    background-color: #f9f9f9;
+}
