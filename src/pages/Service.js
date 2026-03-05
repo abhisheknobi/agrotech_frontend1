@@ -5,7 +5,7 @@ import sampleImage from "../components/images/card.png"; // Replace with your ma
 
 const Service = () => {
   const navigate = (path) => {
-      window.location.href = path;
+    window.location.href = path;
   }
   return (
     <div className="image-container">
@@ -94,8 +94,7 @@ const Service = () => {
 
           <div className="footer-section">
             <h3>Get In Touch</h3>
-            <p><i className="fas fa-envelope"></i> Email: example@info.com</p>
-            <p><i className="fas fa-phone"></i> Phone: 333 686 0000</p>
+            <p><i className="fas fa-envelope"></i> Email: abhisheknobi.work@gmail.com</p>
           </div>
         </footer>
       </div>
