@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import '../styles/Chatbot.css';
+import { GEMINI_API } from '../config';
 
 const Chatbot = () => {
     //const api_key = process.env.AI_API_KEY; 
@@ -18,7 +19,7 @@ const Chatbot = () => {
 
         try {
             const response = await axios({
-                url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${process.env.REACT_APP_GEMINI_API_KEY}`,
+                url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API}`,
                 method: "POST",
                 data: {
                     "contents": [{
