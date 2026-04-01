@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../styles/CropDisease.css';
 import axios from 'axios';
 import { FaUserDoctor } from "react-icons/fa6";
-import { ML_API_URL } from '../config';
+import { GEMINI_API, ML_API_URL } from '../config';
 
 const CropDisease = () => {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -68,7 +68,7 @@ const CropDisease = () => {
 
     try {
       const response = await axios({
-        url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${process.env.REACT_APP_GEMINI_API_KEY}`,
+        url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API}`,
         method: "POST",
         headers: { 'Content-Type': 'application/json' },
         data: {

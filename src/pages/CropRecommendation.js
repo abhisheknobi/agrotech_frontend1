@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "../styles/CropRecommendation.css";
-import { ML_API_URL } from '../config';
+import { GEMINI_API, ML_API_URL } from '../config';
 
 const CropRecommendation = () => {
   const navigate = useNavigate();
@@ -68,7 +68,7 @@ const CropRecommendation = () => {
 
     try {
       const response = await axios.post(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${process.env.REACT_APP_GEMINI_API_KEY}`,
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API}`,
         {
           contents: [
             {
